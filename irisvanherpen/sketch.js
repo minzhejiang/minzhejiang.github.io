@@ -5,7 +5,7 @@ var sliderRate;
 
 function setup() {
     createCanvas(60,200);
-    song=loadSound('../asset/water2.mp3', loaded);
+    song=loadSound('https://minzhejiang.github.io/irisvanherpen/asset/water2.mp3', loaded);
     song.setVolume(0.5);
    
 }
