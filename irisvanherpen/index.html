@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iris Van Herpen</title>
+	<link rel="stylesheet" type="text/css" href="includes/style.css">
+	<script src="p5.js"></script>
+    <script src="p5.dom.js"></script>
+    <script src="p5.sound.js"></script>
+    <script src="sketch.js"></script>
+	<script type="text/javascript" src="includes/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="includes/generator.js"></script>
+</head>
+<body>
+	<img src="images/background.jpg" class="background"/>
+	
+	<div class="title"></div>
+
+	<div class="gallery">
+		<div class="sorting">
+			<div>
+				<span>Filter photos by</span>
+				<a class="sortLink selected" data-keyword="all" href="#">All categories</a>
+				<a class="sortLink" data-keyword="aeriform" href="#">Aeriform</a>
+				<a class="sortLink" data-keyword="betweentheline" href="#">Between The Line</a>
+				<a class="sortLink" data-keyword="seijaku" href="#">Seijaku</a>
+				<a class="sortLink" data-keyword="lucid" href="#">Lucid</a>
+				<a class="sortLink" data-keyword="wildernessembodied" href="#">Wilderness Embodied</a>
+				<div class="clear_both"></div>
+			</div>
+		</div>
+				
+		<div class='photos'>
+			<div class="thumbnail_container">
+				<a class="thumbnail" id="aeriform" title="this is a capture for aeriform1" href="photos/aeriform1.jpg" data-keywords="aeriform"><img src="photos/aeriform1_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for aeriform2" href="photos/aeriform2.jpg" data-keywords="aeriform"><img src="photos/aeriform2_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for aeriform3" href="photos/aeriform3.jpg" data-keywords="aeriform"><img src="photos/aeriform3_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for aeriform4" href="photos/aeriform4.jpg" data-keywords="aeriform"><img src="photos/aeriform4_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for aeriform5" href="photos/aeriform5.jpg" data-keywords="aeriform"><img src="photos/aeriform5_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for aeriform6" href="photos/aeriform6.jpg" data-keywords="aeriform"><img src="photos/aeriform6_thumbnail.jpg"/></a>
+
+
+				<a class="thumbnail" title="this is a capture for between1" href="photos/between1.jpg" data-keywords="betweentheline"><img src="photos/between1_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for between2" href="photos/between2.jpg" data-keywords="betweentheline"><img src="photos/between2_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for between3" href="photos/between3.jpg" data-keywords="betweentheline"><img src="photos/between3_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for between4" href="photos/between4.jpg" data-keywords="betweentheline"><img src="photos/between4_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for between3" href="photos/between5.jpg" data-keywords="betweentheline"><img src="photos/between5_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for between4" href="photos/between6.jpg" data-keywords="betweentheline"><img src="photos/between6_thumbnail.jpg"/></a>
+
+				<a class="thumbnail" title="this is a capture for seijaku1" href="photos/seijaku1.jpg" data-keywords="seijaku"><img src="photos/seijaku1_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for seijaku2" href="photos/seijaku2.jpg" data-keywords="seijaku"><img src="photos/seijaku2_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for seijaku3" href="photos/seijaku3.jpg" data-keywords="seijaku"><img src="photos/seijaku3_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for seijaku4" href="photos/seijaku4.jpg" data-keywords="seijaku"><img src="photos/seijaku4_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for seijaku3" href="photos/seijaku5.jpg" data-keywords="seijaku"><img src="photos/seijaku5_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for seijaku4" href="photos/seijaku6.jpg" data-keywords="seijaku"><img src="photos/seijaku6_thumbnail.jpg"/></a>
+
+				<a class="thumbnail" title="this is a capture for lucid1" href="photos/lucid1.jpg" data-keywords="lucid"><img src="photos/lucid1_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for lucid2" href="photos/lucid2.jpg" data-keywords="lucid"><img src="photos/lucid2_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for lucid3" href="photos/lucid3.jpg" data-keywords="lucid"><img src="photos/lucid3_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for lucid4" href="photos/lucid4.jpg" data-keywords="lucid"><img src="photos/lucid4_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for lucid5" href="photos/lucid5.jpg" data-keywords="lucid"><img src="photos/lucid5_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for lucid6" href="photos/lucid6.jpg" data-keywords="lucid"><img src="photos/lucid6_thumbnail.jpg"/></a>
+
+				<a class="thumbnail" title="this is a capture for wilderness1" href="photos/wilderness1.jpg" data-keywords="wildernessembodied"><img src="photos/wilderness1_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for wilderness2" href="photos/wilderness2.jpg" data-keywords="wildernessembodied"><img src="photos/wilderness2_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for wilderness3" href="photos/wilderness3.jpg" data-keywords="wildernessembodied"><img src="photos/wilderness3_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for wilderness4" href="photos/wilderness4.jpg" data-keywords="wildernessembodied"><img src="photos/wilderness4_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for wilderness5" href="photos/wilderness5.jpg" data-keywords="wildernessembodied"><img src="photos/wilderness5_thumbnail.jpg"/></a>
+				<a class="thumbnail" title="this is a capture for wilderness6" href="photos/wilderness6.jpg" data-keywords="wildernessembodied"><img src="photos/wilderness6_thumbnail.jpg"/></a>
+
+			</div>
+		</div>
+	</div>
+<!--
+	<div class="debug-size" style="position: absolute; bottom: 0px; left: 5px">debug size</div>
+	<div class="debug-remainder" style="position: absolute; bottom: 25px; left: 5px">debug remainder</div>-->
+
+</body>
+</html>
